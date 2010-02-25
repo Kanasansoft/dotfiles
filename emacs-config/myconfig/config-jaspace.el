@@ -1,0 +1,7 @@
+(require 'jaspace)
+(jaspace-mode-on)
+(setq jaspace-modes t)
+;(setq jaspace-alternate-jaspace-string "__")
+(setq jaspace-alternate-eol-string "<<\n")
+;(setq jaspace-highlight-tabs t)
+(setq jaspace-highlight-tabs ?>)

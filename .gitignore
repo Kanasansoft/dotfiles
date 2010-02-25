@@ -1,0 +1,23 @@
+#for windows
+Thumbs.db
+
+#for mac
+.DS_Store
+
+#for emacs
+*~
+
+#for vi
+.sw*
+
+#for eclipse
+.project
+.classpath
+.wtpmodules
+/.settings
+
+#for maven
+/target
+
+#for emacs
+*.elc

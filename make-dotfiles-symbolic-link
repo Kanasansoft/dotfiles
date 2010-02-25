@@ -1,0 +1,40 @@
+ #!/bin/sh
+
+echo "Start make symbolic link."
+
+existfile=false
+dotdir="dotfiles"
+
+for barfile in ~/${dotdir}/_*
+do
+  barfile=${barfile##/*/}
+  dotfile=.${barfile#_}
+  if [ -e ~/$dotfile -o -L ~/$dotfile ]
+  then
+    echo "exit file : ~/"$dotfile
+    existfile=true
+  fi
+done
+
+if $existfile ; then
+  echo "Error."
+  echo "File already existed."
+  echo "To exit without creating symbolic links."
+  exit 1
+fi
+
+for barfile in ~/${dotdir}/_*
+do
+  barfile=${barfile##/*/}
+  dotfile=.${barfile#_}
+  if [ -e ~/$dotfile -o -L ~/$dotfile ]
+  then
+    echo "exit file : ~/"$dotfile
+    echo "Error!"
+  else
+    ln -s $dotdir/$barfile ../$dotfile
+    echo "made symbolic link : ~/"$dotfile
+  fi
+done
+
+echo "Success."
