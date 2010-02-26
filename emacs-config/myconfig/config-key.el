@@ -10,6 +10,7 @@
 
 ;;;add 2010/02/25
 ;;;from okkez
+;;;http://github.com/okkez/dotfiles/blob/master/emacs-config/config-key.el
 ;; バッファ全体をインデントする
 (global-set-key "\C-x\C-i"
                 '(lambda ()
@@ -18,6 +19,7 @@
 
 ;;;add 2010/02/25
 ;;;from okkez
+;;;http://github.com/okkez/dotfiles/blob/master/emacs-config/config-key.el
 ;; other-window を逆回りにする
 (global-set-key "\C-x\p"
                 '(lambda ()
