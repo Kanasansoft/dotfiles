@@ -1,6 +1,9 @@
 ;;;add 2010/02/26
 ;;;http://www.unixuser.org/~ysjj/emacs/lisp/keybind-config.el
-(defvar my-prefix "\C-z" "*Prefix key for my favorite.")
+;;;これだけではC-zをPrefixに設定できていないらしい。
+;;;anything.el内部で同様の処理を行なっている模様。
+;;;このためこの設定は不要のためコメントアウト。
+;;;(defvar my-prefix "\C-z" "*Prefix key for my favorite.")
 
 ;;;add 2008/07/09
 ;;;C-hをDELに変更
