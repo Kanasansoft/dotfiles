@@ -9,3 +9,9 @@
 ;; デフォルトを折り返さないように設定する
 (setq truncate-lines nil)
 (setq truncate-partial-width-windows nil)
+
+;;;add 2010/02/26
+;;;http://www.bookshelf.jp/soft/meadow_30.html#SEC402
+;;;Shift+カーソルでバッファを移動する
+(windmove-default-keybindings)
+(setq windmove-wrap-around t)
