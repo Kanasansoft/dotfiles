@@ -29,3 +29,23 @@
                 '(lambda ()
                    (interactive)
                    (other-window -1)))
+
+;;;add 2010/02/26
+;;;from peccu
+;;;http://gist.github.com/315423
+;;====================================
+;;; 折り返し表示ON/OFF
+;;====================================
+(defun toggle-truncate-lines ()
+  "折り返し表示をトグル動作します."
+  (interactive)
+  (if truncate-lines
+      (progn ; 折り返さない
+        (setq truncate-lines nil)
+        (setq truncate-partial-width-windows nil))
+    (progn ; 折り返す
+      (setq truncate-lines t)
+      (setq truncate-partial-width-windows t)))
+    (recenter))
+; C-zC-lへバインド
+(global-set-key "\C-z\C-l" 'toggle-truncate-lines)
