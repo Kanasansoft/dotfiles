@@ -1,3 +1,7 @@
+;;;add 2010/02/26
+;;;http://www.unixuser.org/~ysjj/emacs/lisp/keybind-config.el
+(defvar my-prefix "\C-z" "*Prefix key for my favorite.")
+
 ;;;add 2008/07/09
 ;;;C-hをDELに変更
 (global-set-key "\C-h" 'backward-delete-char)
