@@ -15,3 +15,8 @@
 ;;;Shift+カーソルでバッファを移動する
 (windmove-default-keybindings)
 (setq windmove-wrap-around t)
+
+;;;add 2010/05/01
+;;;行番号と列番号の表示
+(line-number-mode t)
+(column-number-mode t)
