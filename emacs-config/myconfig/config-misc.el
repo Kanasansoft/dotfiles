@@ -20,3 +20,9 @@
 ;;;行番号と列番号の表示
 (line-number-mode t)
 (column-number-mode t)
+
+;;;add 2010/09/12
+;;;背景を透過
+(if window-system
+   (set-frame-parameter nil 'alpha 80)
+   )
