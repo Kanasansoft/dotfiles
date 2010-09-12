@@ -1,3 +1,5 @@
+;; (auto-install-from-url "http://homepage3.nifty.com/satomii/software/jaspace.el")
+
 (require 'jaspace)
 (jaspace-mode-on)
 (setq jaspace-modes t)

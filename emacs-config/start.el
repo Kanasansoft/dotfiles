@@ -1,5 +1,6 @@
+;; (map (dired-create-directory "~/dotfiles/emacs-config/download") (dired-create-directory "~/dotfiles/emacs-config/repository"))
+
 ;;; start.el
-;;;
 
 ;;;起動時間を測定する(前処理)
 (defun my-time-lag ()
