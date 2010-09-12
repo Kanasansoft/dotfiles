@@ -30,3 +30,7 @@
 ;;;add 2010/09/12
 ;;;キーストロークをエコーエリアに早く表示する
 (setq echo-keystrokes 0.1)
+
+;;;add 2010/09/12
+;;;現在行に色をつける
+(global-hl-line-mode t)
