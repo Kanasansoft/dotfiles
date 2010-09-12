@@ -26,3 +26,7 @@
 (if window-system
    (set-frame-parameter nil 'alpha 80)
    )
+
+;;;add 2010/09/12
+;;;キーストロークをエコーエリアに早く表示する
+(setq echo-keystrokes 0.1)
