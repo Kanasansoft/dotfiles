@@ -1,6 +1,7 @@
 ;; (auto-install-from-url "http://www.dr-qubit.org/undo-tree/undo-tree.el") <= バグあり
 ;; (auto-install-from-gist "586393") <= (1)のfork
 ;; 2010/09/19現在公開されている0.1.6にはバグがある
+;; 開発版のundo-treeのrepositoryでは、0.1.6直後のcommitでこのバグが解消されている模様。
 ;; 詳細は下記URLを参照
 ;;   http://coldbox.assembla.com/code/kyoto-emacsers/subversion/changesets/136
 ;; その他のundo-treeの改良は以下のURLを参照
