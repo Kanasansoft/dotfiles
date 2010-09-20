@@ -73,7 +73,7 @@ Assume that the filename should be config-NAME.el."
     "undo-tree"
     "uniquify"
     ;"view"
-    ;"yasnippet"
+    "yasnippet"
     ;"yatex"
     "what-char"
     ))
