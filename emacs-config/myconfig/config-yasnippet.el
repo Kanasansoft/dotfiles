@@ -5,3 +5,5 @@
 (add-to-list 'load-path "~/dotfiles/emacs-config/download/yasnippet-0.6.1c")
 (require 'yasnippet-config)
 (yas/setup "~/dotfiles/emacs-config/download/yasnippet-0.6.1c")
+(global-set-key (kbd "C-x y") 'yas/register-oneshot-snippet)
+(global-set-key (kbd "C-x C-y") 'yas/expand-oneshot-snippet)
