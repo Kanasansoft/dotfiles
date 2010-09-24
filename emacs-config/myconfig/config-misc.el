@@ -42,3 +42,7 @@
 ;;;add 2010/09/12
 ;;;対応する括弧を表示する
 (show-paren-mode t)
+
+;;;add 2010/10/24
+;;;リージョンに色を着ける
+(setq transient-mark-mode t)
