@@ -57,8 +57,9 @@
      (message-mml-face ((t (:foreground "green"))))
      (message-separator-face ((t (:foreground "blue"))))
 
-     (modeline ((t (:background "white" :foreground "blue"))))
-     (modeline-buffer-id ((t (:background "white" :foreground "red"))))
+     (modeline ((t (:background "white" :foreground "dark blue"))))
+     (mode-line-inactive ((t (:background "grey" :foreground "black"))))
+     (modeline-buffer-id ((t (:bold t :background nil :foreground "red"))))
      (modeline-mousable ((t (:background "white" :foreground "magenta"))))
      (modeline-mousable-minor-mode ((t (:background "white" :foreground "yellow"))))
      (region ((t (:background "white" :foreground "black"))))
