@@ -57,3 +57,7 @@
     (recenter))
 ; C-zC-lへバインド
 (global-set-key "\C-z\C-l" 'toggle-truncate-lines)
+
+;;;add 2010/02/30
+;;follow-mode
+(global-set-key "\C-z\C-f" 'follow-mode)
