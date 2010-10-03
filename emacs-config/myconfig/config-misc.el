@@ -43,10 +43,10 @@
 ;;;対応する括弧を表示する
 (show-paren-mode t)
 
-;;;add 2010/10/24
+;;;add 2010/09/24
 ;;;リージョンに色を着ける
 (setq transient-mark-mode t)
 
-;;;add 2010/10/30
+;;;add 2010/09/30
 ;;;diffをdefaultのcontext diff形式からunified diff形式に変更する
 (setq diff-switches "-u")
