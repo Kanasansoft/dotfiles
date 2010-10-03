@@ -50,3 +50,7 @@
 ;;;add 2010/09/30
 ;;;diffをdefaultのcontext diff形式からunified diff形式に変更する
 (setq diff-switches "-u")
+
+;;;add 2010/10/03
+;;;読み込み専用ファイルをview-modeで開くようにする
+(setq view-read-only t)
