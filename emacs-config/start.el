@@ -1,4 +1,4 @@
-;; (progn (dired-create-directory "~/dotfiles/emacs-config/download") (dired-create-directory "~/dotfiles/emacs-config/repository"))
+;; (progn (dired-create-directory "~/dotfiles/emacs-config/download") (dired-create-directory "~/dotfiles/emacs-config/repository") (shell-command "touch ~/dotfiles/emacs-config/myconfig/config-environment.el"))
 
 ;;; start.el
 
@@ -85,7 +85,7 @@ Assume that the filename should be config-NAME.el."
     ;"yatex"
     "what-char"
     ))
-(defvar my-emacs-post-config '("misc" "key"))
+(defvar my-emacs-post-config '("misc" "key" "environment"))
 (defvar my-emacs-config
   (append nil my-emacs-pre-config my-emacs-misc-config my-emacs-post-config))
 
