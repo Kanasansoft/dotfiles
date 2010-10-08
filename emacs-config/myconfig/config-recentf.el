@@ -4,3 +4,4 @@
 ;; 最近使ったファイルに加えないファイルを正規表現で指定する
 (setq recentf-exculude '("?TAGS$" "/var/tmp/"))
 (require 'recentf-ext)
+(global-set-key (kbd "C-x f") 'recentf-open-files)
