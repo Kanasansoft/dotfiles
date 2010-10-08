@@ -54,3 +54,7 @@
 ;;;add 2010/10/03
 ;;;読み込み専用ファイルをview-modeで開くようにする
 (setq view-read-only t)
+
+;;;add 2010/10/08
+;;;bufferのファイルパスをタイトルバーに表示
+(setq frame-title-format '(:eval (if (>(length buffer-file-name) 0) buffer-file-name "%b")))
