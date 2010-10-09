@@ -28,30 +28,37 @@
    )
 
 ;;;add 2010/09/12
+;;from Emacsテクニックバイブル
 ;;;キーストロークをエコーエリアに早く表示する
 (setq echo-keystrokes 0.1)
 
 ;;;add 2010/09/12
+;;from Emacsテクニックバイブル
 ;;;現在行に色をつける
 (global-hl-line-mode t)
 
 ;;;add 2010/09/12
+;;from Emacsテクニックバイブル
 ;;;モードラインに時刻を表示する
 (display-time)
 
 ;;;add 2010/09/12
+;;from Emacsテクニックバイブル
 ;;;対応する括弧を表示する
 (show-paren-mode t)
 
 ;;;add 2010/09/24
+;;from Emacsテクニックバイブル
 ;;;リージョンに色を着ける
 (setq transient-mark-mode t)
 
 ;;;add 2010/09/30
+;;from Emacsテクニックバイブル
 ;;;diffをdefaultのcontext diff形式からunified diff形式に変更する
 (setq diff-switches "-u")
 
 ;;;add 2010/10/03
+;;from Emacsテクニックバイブル
 ;;;読み込み専用ファイルをview-modeで開くようにする
 (setq view-read-only t)
 
