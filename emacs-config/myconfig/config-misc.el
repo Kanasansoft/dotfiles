@@ -56,5 +56,7 @@
 (setq view-read-only t)
 
 ;;;add 2010/10/08
+;;;from umq
+;;;http://wassr.jp/user/umq/statuses/vTQvlLDOWd
 ;;;bufferのファイルパスをタイトルバーに表示
 (setq frame-title-format '(:eval (if (>(length buffer-file-name) 0) buffer-file-name "%b")))

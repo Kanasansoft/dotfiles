@@ -1,3 +1,4 @@
+;;from Emacsテクニックバイブル
 ;; ブックマークを変更したら即保存する
 (setq bookmark-save-flag 1)
 ;; 超整理法(好みに応じて)

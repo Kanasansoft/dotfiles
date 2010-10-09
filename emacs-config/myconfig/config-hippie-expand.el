@@ -1,3 +1,4 @@
+;;from Emacsテクニックバイブル
 (global-set-key "\M-/" 'hippie-expand)
 (setq hippie-expand-try-functions-list
       '(yas/hippie-try-expand

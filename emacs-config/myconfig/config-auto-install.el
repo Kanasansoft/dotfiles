@@ -1,5 +1,5 @@
 ;; (install-elisp "http://www.emacswiki.org/emacs/download/auto-install.el")
-
+;;from Emacsテクニックバイブル
 (require 'auto-install)
 (setq auto-install-directory "~/dotfiles/emacs-config/repository/")
 (condition-case nil
