@@ -60,3 +60,8 @@
 ;;;http://wassr.jp/user/umq/statuses/vTQvlLDOWd
 ;;;bufferのファイルパスをタイトルバーに表示
 (setq frame-title-format '(:eval (if (>(length buffer-file-name) 0) buffer-file-name "%b")))
+
+;;;add 2010/10/09
+;;from Emacsテクニックバイブル
+;;;ediffを実行時に、別フレームを開かない
+(setq ediff-window-setup-function 'ediff-setup-windows-plain)
