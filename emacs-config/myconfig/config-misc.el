@@ -68,6 +68,16 @@
 ;;;bufferのファイルパスをタイトルバーに表示
 (setq frame-title-format '(:eval (if (>(length buffer-file-name) 0) buffer-file-name "%b")))
 
+;;;add 2010/10/10
+;;from Emacsテクニックバイブル
+;;;現在の関数名を常に表示する
+(which-func-mode t)
+;;すべてのメジャーモードに対してwhich-func-modeを適用する
+(setq which-func-modes t)
+;;画面上部に表示する場合は下の2行が必要
+(delete (assoc 'which-func-mode mode-line-format) mode-line-format)
+(setq-default header-line-format '(which-func-mode ("" which-func-format)))
+
 ;;;add 2010/10/09
 ;;from Emacsテクニックバイブル
 ;;;ediffを実行時に、別フレームを開かない
