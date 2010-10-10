@@ -5,6 +5,6 @@
 (when (string-equal system-type "windows-nt")
 (progn
 (setenv "PATH"
-(concat cygwin-bin-path ";" gnu-bin-path ";"))
+(concat (getenv "PATH") ";" cygwin-bin-path ";" gnu-bin-path ";"))
 (setq exec-path
 '(cygwin-bin-path gnu-bin-path))))
