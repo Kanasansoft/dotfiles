@@ -1,3 +1,11 @@
+(if (string-equal system-type "windows-nt")
+  (progn (setq line-separator "\r\n")
+         (setq file-separator "\\")
+         (setq path-separator ";"))
+  (progn (setq line-separator "\n")
+         (setq file-separator "/")
+         (setq path-separator ":")))
+
 (setq migemo-type "migemo")
 ;(setq migemo-type "cmigemo")
 
