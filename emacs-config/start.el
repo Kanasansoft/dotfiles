@@ -29,7 +29,6 @@ Assume that the filename should be config-NAME.el."
     "install-elisp"
     "auto-install"
     "auto-complete"
-    "anything"
     ;"auto-insert-tkld"
     ;"auto-save"
     ;"base"
@@ -96,7 +95,7 @@ Assume that the filename should be config-NAME.el."
     ;"yatex"
     "what-char"
     ))
-(defvar my-emacs-post-config '("misc" "key" "environment"))
+(defvar my-emacs-post-config '("misc" "key" "environment" "anything"))
 (defvar my-emacs-config
   (append nil my-emacs-pre-config my-emacs-misc-config my-emacs-post-config))
 
