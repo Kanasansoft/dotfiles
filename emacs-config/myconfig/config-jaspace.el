@@ -7,5 +7,5 @@
 (setq jaspace-alternate-eol-string "↩\n")
 ;(setq jaspace-alternate-eol-string "⏎\n")
 ;(setq jaspace-highlight-tabs t)
-(setq jaspace-highlight-tabs ?>)
+(setq jaspace-highlight-tabs ?⇥)
 (global-set-key (kbd "C-z C-j") 'jaspace-mode)
