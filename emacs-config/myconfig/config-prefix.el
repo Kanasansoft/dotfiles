@@ -1,3 +1,4 @@
+; -*- mode: lisp; coding: utf8 -*-
 ;;;add 2010/02/26
 ;;;http://www.unixuser.org/~ysjj/emacs/lisp/keybind-config.el
 ;;;これだけではC-zをPrefixに設定できていないらしい。

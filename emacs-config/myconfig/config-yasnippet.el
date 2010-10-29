@@ -1,3 +1,4 @@
+; -*- mode: lisp; coding: utf8 -*-
 ;; (shell-command "cd ~/dotfiles/emacs-config/download;wget http://yasnippet.googlecode.com/files/yasnippet-0.6.1c.tar.bz2")
 ;; (shell-command "cd ~/dotfiles/emacs-config/download;tar jxvf yasnippet-0.6.1c.tar.bz2")
 ;; (install-elisp-from-emacswiki "yasnippet-config.el")

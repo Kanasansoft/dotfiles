@@ -1,3 +1,4 @@
+; -*- mode: lisp; coding: utf8 -*-
 ;; (install-elisp "http://www.emacswiki.org/emacs/download/auto-install.el")
 ;;from Emacsテクニックバイブル
 (require 'auto-install)

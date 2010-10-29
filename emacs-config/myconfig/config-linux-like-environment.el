@@ -1,3 +1,4 @@
+; -*- mode: lisp; coding: utf8 -*-
 ;;windows only stuff
 ;;http://stackoverflow.com/questions/2169520/how-to-get-grep-working-in-emacs-on-windows-emacsw32
 ;;cygwin等のバイナリをemacsから利用できるようにする

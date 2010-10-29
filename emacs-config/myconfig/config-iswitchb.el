@@ -1,3 +1,4 @@
+; -*- mode: lisp; coding: utf8 -*-
 ;;;add 2010/09/12
 ;;from Emacsテクニックバイブル
 ;;;バッファ切り替えを強化する

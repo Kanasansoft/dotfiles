@@ -1,3 +1,4 @@
+; -*- mode: lisp; coding: utf8 -*-
 ;;;add 2010/03/20
 ;;;サーバ起動
 (server-start)

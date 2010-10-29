@@ -1,3 +1,4 @@
+; -*- mode: lisp; coding: utf8 -*-
 ;; (progn (dired-create-directory "~/dotfiles/emacs-config/download") (dired-create-directory "~/dotfiles/emacs-config/repository") (shell-command "touch ~/dotfiles/emacs-config/myconfig/config-environment.el"))
 
 ;;; start.el

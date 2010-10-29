@@ -1,3 +1,4 @@
+; -*- mode: lisp; coding: utf8 -*-
 ;;;add 2008/07/09
 ;;;C-hをDELに変更
 (global-set-key "\C-h" 'backward-delete-char)

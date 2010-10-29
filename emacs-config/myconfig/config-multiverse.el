@@ -1,3 +1,4 @@
+; -*- mode: lisp; coding: utf8 -*-
 ;; (install-elisp-from-emacswiki "multiverse.el")
 ;;;add 2010/09/15
 ;;from Emacsテクニックバイブル

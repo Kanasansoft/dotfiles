@@ -1,3 +1,4 @@
+; -*- mode: lisp; coding: utf8 -*-
 ;; (auto-install-from-emacswiki "open-junk-file.el")
 ;; (dired-create-directory "~/dotfiles/emacs-config/junk")
 ;;from Emacsテクニックバイブル

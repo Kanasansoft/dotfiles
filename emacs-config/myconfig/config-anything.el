@@ -1,3 +1,4 @@
+; -*- mode: lisp; coding: utf8 -*-
 ;; (auto-install-batch "anything")
 ;;from Emacsテクニックバイブル
 (require 'anything-startup)

@@ -1,3 +1,4 @@
+; -*- mode: lisp; coding: utf8 -*-
 ;; (install-elisp "http://js2-mode.googlecode.com/files/js2-20090723b.el")
 
 ;;;add 2008/12/08

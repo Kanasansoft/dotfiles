@@ -1,3 +1,4 @@
+; -*- mode: lisp; coding: utf8 -*-
 ;; (shell-command "cd ~/dotfiles/emacs-config/download;wget http://download.savannah.gnu.org/releases/color-theme/color-theme-6.6.0.tar.gz")
 ;; (shell-command "cd ~/dotfiles/emacs-config/download;tar zxvf color-theme-6.6.0.tar.gz")
 ;;from okkez

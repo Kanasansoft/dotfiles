@@ -1,3 +1,4 @@
+; -*- mode: lisp; coding: utf8 -*-
 ;; (shell-command "cd ~/dotfiles/emacs-config/download;wget http://www.emacswiki.org/cgi-bin/wiki/download/install-elisp.el")
 ;;from Emacsテクニックバイブル
 ;; install-elisp

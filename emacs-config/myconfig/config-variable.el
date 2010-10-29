@@ -1,3 +1,4 @@
+; -*- mode: lisp; coding: utf8 -*-
 (if (string-equal system-type "windows-nt")
   (progn (setq line-separator "\r\n")
          (setq file-separator "\\")
