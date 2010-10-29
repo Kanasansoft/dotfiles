@@ -1,4 +1,3 @@
-; -*- mode: lisp; coding: utf8 -*-
 ;; (auto-install-from-emacswiki "recentf-ext.el")
 ;;from Emacsテクニックバイブル
 (setq recentf-max-saved-items 500)

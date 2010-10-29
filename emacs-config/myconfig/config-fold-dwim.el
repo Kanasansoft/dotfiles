@@ -1,4 +1,3 @@
-; -*- mode: lisp; coding: utf8 -*-
 ;; (install-elisp "http://www.dur.ac.uk/p.j.heslin/Software/Emacs/Download/fold-dwim.el")
 ;;from Emacsテクニックバイブル
 ;;コードを折り畳む

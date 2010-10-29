@@ -1,4 +1,3 @@
-; -*- mode: lisp; coding: utf8 -*-
 ;; (auto-install-from-url "http://www.dr-qubit.org/undo-tree/undo-tree.el") <= バグあり
 ;; (auto-install-from-gist "586393") <= (1)のfork
 ;; 2010/09/19現在公開されている0.1.6にはバグがある

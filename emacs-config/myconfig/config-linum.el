@@ -1,4 +1,3 @@
-; -*- mode: lisp; coding: utf8 -*-
 ;; (install-elisp "http://stud4.tuwien.ac.at/~e0225855/linum/linum.el")
 
 ;;;add 2010/10/09

@@ -1,4 +1,3 @@
-; -*- mode: lisp; coding: utf8 -*-
 ;; (install-elisp-from-emacswiki "ipa.el")
 ;;from Emacsテクニックバイブル
 ;;ファイルに直接書き込まずにメモをする

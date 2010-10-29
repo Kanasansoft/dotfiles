@@ -1,4 +1,3 @@
-; -*- mode: lisp; coding: utf8 -*-
 ;; (auto-install-from-emacswiki "key-chord.el")
 ;;from okkez
 (require 'key-chord)

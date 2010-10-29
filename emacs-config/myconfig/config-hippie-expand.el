@@ -1,4 +1,3 @@
-; -*- mode: lisp; coding: utf8 -*-
 ;;from Emacsテクニックバイブル
 (global-set-key "\M-/" 'hippie-expand)
 (setq hippie-expand-try-functions-list

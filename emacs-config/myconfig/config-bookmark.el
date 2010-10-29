@@ -1,4 +1,3 @@
-; -*- mode: lisp; coding: utf8 -*-
 ;;from Emacsテクニックバイブル
 ;; ブックマークを変更したら即保存する
 (setq bookmark-save-flag 1)
