@@ -6,6 +6,8 @@
 ;;;(defvar my-prefix "\C-z" "*Prefix key for my favorite.")
 
 ;;;add 2010/09/12
-(defvar my-prefix "\C-z" "*Prefix key for my favorite.")
+;;;modify 2010/10/31 キーバインド変更
+;(defvar my-prefix "\C-z" "*Prefix key for my favorite.")
+(defvar my-prefix [(control z)] "*Prefix key for my favorite.")
 (defvar my-map (make-sparse-keymap) "*Keymap for `my-prefix' commands.")
 (define-key global-map my-prefix my-map)

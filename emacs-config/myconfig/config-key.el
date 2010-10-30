@@ -27,6 +27,7 @@
                    (other-window -1)))
 
 ;;;add 2010/02/26
+;;;modify 2010/10/31 キーバインド変更
 ;;;from peccu
 ;;;http://gist.github.com/315423
 ;;====================================
@@ -44,8 +45,11 @@
       (setq truncate-partial-width-windows t)))
     (recenter))
 ; C-zC-lへバインド
-(global-set-key "\C-z\C-l" 'toggle-truncate-lines)
+;(global-set-key "\C-z\C-l" 'toggle-truncate-lines)
+(global-set-key (vconcat my-prefix [(control l)]) 'toggle-truncate-lines)
 
 ;;;add 2010/02/30
+;;;modify 2010/10/31 キーバインド変更
 ;;follow-mode
-(global-set-key "\C-z\C-f" 'follow-mode)
+;(global-set-key "\C-z\C-f" 'follow-mode)
+(global-set-key (vconcat my-prefix [(control f)]) 'follow-mode)
