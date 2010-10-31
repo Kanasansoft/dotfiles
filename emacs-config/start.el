@@ -22,7 +22,7 @@
 Assume that the filename should be config-NAME.el."
   (load (concat my-emacs-config-dir "/config-" name ".el")))
 
-(defvar my-emacs-pre-config '("variable" "path" "proxy" "prefix"))
+(defvar my-emacs-pre-config '("variable" "path" "proxy" "prefix" "anything"))
 (defvar my-emacs-misc-config
   '(
     ;"anthy"
@@ -43,6 +43,7 @@ Assume that the filename should be config-NAME.el."
     ;"css-mode"
     ;"darcsum"
     ;"ecb"
+    "elscreen"
     "emacsclient"
     "fold-dwim"
     ;"flymake"
@@ -95,7 +96,7 @@ Assume that the filename should be config-NAME.el."
     ;"yatex"
     "what-char"
     ))
-(defvar my-emacs-post-config '("misc" "key" "environment" "anything"))
+(defvar my-emacs-post-config '("misc" "key" "environment"))
 (defvar my-emacs-config
   (append nil my-emacs-pre-config my-emacs-misc-config my-emacs-post-config))
 
