@@ -1,4 +1,4 @@
-; -*- mode: lisp; coding: utf8 -*-
+; -*- mode: lisp; coding: utf-8 -*-
 ;; (auto-install-from-url "http://homepage3.nifty.com/satomii/software/jaspace.el")
 ;;modify 2010/10/31 キーバインド変更
 (require 'jaspace)
