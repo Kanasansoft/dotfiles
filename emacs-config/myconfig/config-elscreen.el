@@ -4,6 +4,6 @@
 ;;add 2010/10/31
 ;;http://www.morishima.net/~naoto/software/elscreen/index.php.ja
 (add-to-list 'load-path "~/dotfiles/emacs-config/download/elscreen-1.4.6")
-;(setq elscreen-prefix-key "\C-z")
+(setq elscreen-prefix-key "\C-z")
 (require 'elscreen)
 ;(elscreen-set-prefix-key "\C-t")
