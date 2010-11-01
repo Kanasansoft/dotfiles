@@ -22,7 +22,7 @@
 Assume that the filename should be config-NAME.el."
   (load (concat my-emacs-config-dir "/config-" name ".el")))
 
-(defvar my-emacs-pre-config '("variable" "path" "proxy" "prefix" "anything"))
+(defvar my-emacs-pre-config '("variable" "path" "apel" "proxy" "prefix" "anything"))
 (defvar my-emacs-misc-config
   '(
     ;"anthy"
