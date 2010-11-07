@@ -1,4 +1,6 @@
 ;; (install-elisp "http://js2-mode.googlecode.com/files/js2-20090723b.el")
+;; (shell-command "cd ~/dotfiles/emacs-config/repository/;mv js2-20090723b.el js2.el")
+;; (shell-command "cd ~/dotfiles/emacs-config/repository/;mv js2-20090723b.elc js2.elc")
 
 ;;;add 2008/12/08
 ;;;js2-mode
