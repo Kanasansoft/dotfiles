@@ -82,3 +82,10 @@
 ;;from Emacsテクニックバイブル
 ;;;ediffを実行時に、別フレームを開かない
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
+
+;;;add 2011/04/24
+;;http://gihyo.jp/dev/serial/01/zsh-book/0005
+;;;「/」と「/」の間でも、ディレクトリとファイル名の補完を行なえるようにする
+;;;ex.「ls /u/l/z/4/z/」の後にタブで補完を実行すると、
+;;;   「ls /usr/lib/zsh/4.3.4/zsh/」となる。
+(partial-completion-mode t)
