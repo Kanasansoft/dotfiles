@@ -1,0 +1,45 @@
+function my-emacs-load-config (){
+
+	typeset    +g my_zsh_config_dir
+	typeset -a +g my_zsh_pre_config
+	typeset -a +g my_zsh_misc_config
+	typeset -a +g my_zsh_post_config
+	typeset -a +g my_zsh_config
+	typeset    +g my_zsh_config_path
+
+	my_zsh_config_dir="$HOME/dotfiles/zsh-config/myconfig"
+
+	my_zsh_pre_config=(
+		'stty'
+		'fpath'
+		'path'
+		'key'
+	)
+
+	my_zsh_misc_config=(
+		'ls'
+		'secenv'
+	)
+
+	my_zsh_post_config=(
+		'misc'
+		'precmd'
+	)
+
+	my_zsh_config=(
+		$my_zsh_pre_config
+		$my_zsh_misc_config
+		$my_zsh_post_config
+	)
+
+	for name in $my_zsh_config
+	do
+		my_zsh_config_path="${my_zsh_config_dir}/config-${name}"
+		[ -f $my_zsh_config_path ] && source "$my_zsh_config_path"
+	done
+
+}
+
+my-emacs-load-config
+
+unfunction my-emacs-load-config

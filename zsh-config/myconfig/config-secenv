@@ -1,0 +1,10 @@
+secenv()
+{
+    file=~/.secret_environment_value
+    if [ $# -eq 0 ]; then
+	`gpg <$file`
+    fi
+    if [ $# -eq 1 ]; then
+	`gpg -c --output $file $1`
+    fi
+}

@@ -1,0 +1,12 @@
+#キーバインドの設定
+bindkey -e
+
+##履歴検索機能のショートカット設定
+autoload history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey '^P' history-beginning-search-backward-end
+bindkey '^N' history-beginning-search-forward-end
+
+#ESC+xでM-xとにた動作
+bindkey 'M-x' execute-named-cmd

@@ -1,0 +1,67 @@
+function precmd(){
+
+	function get-git-branch(){
+		typeset +g rtn
+		typeset +g branch
+		branch=$(git branch -a 2>/dev/null | grep "^*" | tr -d '\* ')
+		if [[ -z $branch ]] then
+		else
+			if [[ $branch == "master" ]] then
+				rtn="%{${fg[red]}%}(${branch})%{${reset_color}%}"
+			else
+				rtn="%{${fg[green]}%}(${branch})%{${reset_color}%}"
+			fi
+		fi
+		echo $rtn
+	}
+
+	typeset +g prompt1_prefix=""
+	typeset +g prompt1_middle=""
+	typeset +g prompt1_suffix=""
+
+	typeset +g prompt2_prefix=""
+	typeset +g prompt2_middle=""
+	typeset +g prompt2_suffix=""
+
+	typeset +g sprompt_prefix=""
+	typeset +g sprompt_middle=""
+	typeset +g sprompt_suffix=""
+
+	typeset +g rprompt_prefix=""
+	typeset +g rprompt_middle=""
+	typeset +g rprompt_suffix=""
+
+	typeset +g prompt_error=""
+
+	prompt_error="%(?..exit %?
+)"
+
+	case ${UID} in
+	0)
+		prompt1_middle="%B%{${fg[red]}%}%/#%{${reset_color}%}%b "
+		prompt2_middle="%B%{${fg[red]}%}%_#%{${reset_color}%}%b "
+		sprompt_middle="%B%{${fg[red]}%}%r is correct? [n,y,a,e]:%{${reset_color}%}%b "
+		;;
+	*)
+		prompt1_middle="%{${fg[red]}%}%/%%%{${reset_color}%} "
+		prompt2_middle="%{${fg[red]}%}%_%%%{${reset_color}%} "
+		sprompt_middle="%{${fg[red]}%}%r is correct? [n,y,a,e]:%{${reset_color}%} "
+		;;
+	esac
+
+	if [[ -n "${REMOTEHOST}${SSH_CONNECTION}" ]] then
+		prompt1_prefix="%{${fg[cyan]}%}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]') "
+	fi
+
+	rprompt_middle=`get-git-branch`
+
+	 PROMPT="${prompt1_prefix}${prompt1_middle}${prompt1_suffix}"
+	PROMPT2="${prompt2_prefix}${prompt2_middle}${prompt2_suffix}"
+	SPROMPT="${sprompt_prefix}${sprompt_middle}${sprompt_suffix}"
+	RPROMPT="${rprompt_prefix}${rprompt_middle}${rprompt_suffix}"
+
+	 PROMPT="${prompt_error}${PROMPT}"
+
+	unfunction get-git-branch
+
+}

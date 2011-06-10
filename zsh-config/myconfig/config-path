@@ -1,0 +1,23 @@
+#パスの末尾の「(N)」は、存在しないパスの場合は空文字列を返すためのフラグ
+#「typeset -U」は、重複したパスを取り除く処理
+#http://gihyo.jp/dev/serial/01/zsh-book/0002?page=2
+
+#PATH変数
+path=(
+	$path
+	/usr/local/bin(N)                       #KMyacc
+	/usr/local/lib(N)                       #KMyacc
+	/opt/local/bin(N)                       #Macports
+	/opt/local/sbin/(N)                     #Macports
+	"~/.rvm/scripts/rvm"(N)                 #RVM
+	"~/Developer/flex_sdk_3/bin"(N)         #Flex SDK
+	"~/Developer/android-sdk-mac_x86"(N)    #Android SDK for Mac
+)
+typeset -U path
+
+#MANPATH変数
+manpath=(
+	$manpath
+	/opt/local/man(N)                       #Macports
+)
+typeset -U manpath

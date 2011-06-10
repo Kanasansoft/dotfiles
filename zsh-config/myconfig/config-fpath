@@ -1,0 +1,5 @@
+#補完関数
+fpath=(
+	$fpath
+	~/dotfiles/zsh-config/myfunction(N)
+)

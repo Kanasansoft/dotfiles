@@ -1,0 +1,104 @@
+#以下の連載をもとに作製
+#http://gihyo.jp/dev/serial/01/zsh-book
+#http://journal.mycom.co.jp/column/zsh/
+#一部の設定は以下のURLを参照
+#http://d.hatena.ne.jp/tsaka/20060819/1162739565
+
+#補完機能
+autoload -U compinit ; compinit -u
+
+#カラー表示
+autoload colors ; colors
+
+#補完関数
+#autoload -U ~/dotfiles/zsh-config/myfunction/*(:t)
+
+#文字コードの設定
+export LANG=ja_JP.UTF-8
+#export LANG=ja_JP.eucJP
+#export LANG=ja_JP.SJIS
+
+#例えば「{a-e}」で「a b d c e」を返すようになる
+#この設定がなくても
+#「{a,b,c}1」で「a1 b1 c1」や
+#「{01..05}」で「01 02 03 04 05」を出すことは可能
+setopt braceccl
+
+#コマンド履歴機能
+HISTFILE=~/.zsh_history
+HISTSIZE=50000
+SAVEHIST=50000
+
+#履歴に同じコマンドを重複して記録しない
+setopt hist_ignore_dups
+
+#履歴の共有
+setopt share_history
+
+#コマンド実行時、先頭にスペースを入れると履歴に残らない
+setopt hist_ignore_space
+
+#エイリアスも補完対象に設定
+setopt complete_aliases
+
+#cdを入力しなくてもディレクトリ名だけで移動
+#setopt auto_cd
+
+#移動したディレクトリを記憶しておく
+setopt auto_pushd
+
+#存在しないコマンドを入力したときに、近いコマンドを表示
+setopt correct
+
+#リスト表示をつめて表示
+setopt list_packed
+
+#末尾の/を自動的に削除しない
+#setopt noautoremoveslash
+
+#補完候補表示時などにビープ音をならない
+setopt nolistbeep
+
+#先方予測機能
+#autoload predict-on
+#predict-on
+
+#shellの拡張機能のON/OFF
+#setopt multios
+#setopt no_multios
+
+#sudoでも補完の対象
+#zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin /usr/sbin /usr/bin /sbin /bin
+
+#プロセスとジョブの指定の場所ではメニュー選択モードに移行
+#zstyle ':completion:*:(processes|jobs)' menu yes select=2
+zstyle ':completion:*:processes' menu yes select=2
+zstyle ':completion:*:jobs' menu yes select=2
+
+#ファイル名補完で大文字小文字の区別をなくし、
+#「/」だけでなく「-_.」も区切り文字として認識するようにする
+#  ex.「ls /u/l/z/4/z/e.s」の後に補完を実行すると、
+#     「ls /usr/lib/zsh/4.3.9/zsh/example.so」となる。
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z} r:|[-_.]=**'
+
+#オプション補完で解説部分を表示する
+zstyle ':completion:*' verbose yes
+
+#補完がどのモードで行われているのかを表示
+zstyle ':completion:*' group-name ''
+
+#メッセージのフォーマット
+zstyle ':completion:*:descriptions' format '%B%U%d%u%b < %B%Udescriptions%u%b'
+zstyle ':completion:*:messages' format '%d < %B%Umessages%u%b'
+zstyle ':completion:*:warnings' format 'No matches for: %d < %B%Uwarnings%u%b'
+
+alias du="du -h"
+alias df="df -h"
+
+alias su="su -l"
+
+####################
+
+#alias gls="gls --color"
+#alias lv="lv -Osjis" #日本語に対応したcygwinのページャ?
+#alias ls="ls --color --show-control-chars -F"      #文字化け対策を含む cygwin,gnuのlsでは8ビット文字を表示できないことへの対策
