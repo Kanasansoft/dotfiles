@@ -53,3 +53,14 @@
 ;;follow-mode
 ;(global-set-key "\C-z\C-f" 'follow-mode)
 (global-set-key (vconcat my-prefix [(control f)]) 'follow-mode)
+
+;;;add 2011/07/02
+;;カレントバッファの表示領域を拡大縮小
+;;balance-windowsは標準で[C-x +]にバインド済
+(global-set-key [(control meta shift right)] 'enlarge-window-horizontally)
+(global-set-key [(control meta shift left)]  'shrink-window-horizontally)
+(global-set-key [(control meta shift down)]  'enlarge-window)
+(global-set-key [(control meta shift up)]    'shrink-window)
+
+
+
