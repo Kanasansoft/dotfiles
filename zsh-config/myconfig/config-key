@@ -10,3 +10,11 @@ bindkey '^N' history-beginning-search-forward-end
 
 #ESC+xでM-xとにた動作
 bindkey 'M-x' execute-named-cmd
+
+#先方予測入力
+autoload predict-on
+zle -N predict-on
+zle -N predict-off
+bindkey '^X^f' predict-on
+bindkey '^Xf' predict-off
+zstyle ':predict' toggle true
