@@ -20,7 +20,11 @@
 (defun my-emacs-load-config (name)
   "Load NAME as a configure file in `my-emacs-config-dir'.
 Assume that the filename should be config-NAME.el."
-  (load (concat my-emacs-config-dir "/config-" name ".el")))
+  (condition-case err
+    (load (concat my-emacs-config-dir "/config-" name ".el"))
+    (error (message "%S (find-file %S)" (error-message-string err) (concat my-emacs-config-dir "/config-" name ".el")))
+  )
+)
 
 (defvar my-emacs-pre-config '("variable" "path" "apel" "proxy" "prefix" "anything"))
 (defvar my-emacs-misc-config
