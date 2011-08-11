@@ -1,18 +1,58 @@
 function precmd(){
 
-	function get-git-branch(){
+	function get-git-status(){
+
 		typeset +g rtn
+		typeset +g gitstatus
 		typeset +g branch
-		branch=$(git branch -a 2>/dev/null | grep "^*" | tr -d '\* ')
-		if [[ -z $branch ]] then
+		typeset +g staging
+		typeset +g unstage
+		typeset +g untrack
+		typeset +g color
+
+		gitstatus=$(git status 2>/dev/null)
+
+		if [[ -z $gitstatus ]] then
 		else
-			if [[ $branch == "master" ]] then
-				rtn="%{${fg[red]}%}(${branch})%{${reset_color}%}"
+
+			branch=$(echo ${gitstatus} | grep "^# On branch " | sed s/^#\ On\ branch\ //)
+
+			if [[ -z $branch ]] then
 			else
-				rtn="%{${fg[green]}%}(${branch})%{${reset_color}%}"
+
+				staging=$(echo ${gitstatus} | grep "^# Changes to be committed:$" | wc -l|sed s/\ //g)
+				unstage=$(echo ${gitstatus} | grep "^# Changes not staged for commit:$" | wc -l|sed s/\ //g)
+				untrack=$(echo ${gitstatus} | grep "^# Untracked files:$" | wc -l|sed s/\ //g)
+
+				if [[ $staging == "1" ]] then
+					staging=":^"
+				else
+					staging=""
+				fi
+				if [[ $unstage == "1" ]] then
+					unstage=":*"
+				else
+					unstage=""
+				fi
+				if [[ $untrack == "1" ]] then
+					untrack=":?"
+				else
+					untrack=""
+				fi
+				if [[ $branch == "master" ]] then
+					color="${fg[red]}"
+				else
+					color="${fg[green]}"
+				fi
+
+				rtn="%{${color}%}(${branch}${staging}${unstage}${untrack})%{${reset_color}%}"
+
 			fi
+
 		fi
+
 		echo $rtn
+
 	}
 
 	typeset +g prompt1_prefix=""
@@ -53,7 +93,7 @@ function precmd(){
 		prompt1_prefix="%{${fg[cyan]}%}$(echo ${HOST%%.*} | tr '[a-z]' '[A-Z]') "
 	fi
 
-	rprompt_middle=`get-git-branch`
+	rprompt_middle=`get-git-status`
 
 	 PROMPT="${prompt1_prefix}${prompt1_middle}${prompt1_suffix}"
 	PROMPT2="${prompt2_prefix}${prompt2_middle}${prompt2_suffix}"
@@ -62,6 +102,6 @@ function precmd(){
 
 	 PROMPT="${prompt_error}${PROMPT}"
 
-	unfunction get-git-branch
+	unfunction get-git-status
 
 }
