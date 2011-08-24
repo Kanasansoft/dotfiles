@@ -22,3 +22,9 @@ manpath=(
 	/opt/local/man(N)                       #Macports
 )
 typeset -U manpath
+
+#NODE_PATH変数
+nodepath=(
+	/usr/local/lib/node_modules
+)
+typeset -U nodepath
