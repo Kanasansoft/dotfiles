@@ -1,0 +1,119 @@
+`undo-tree-mode' Minor Mode Bindings Starting With C-x:
+C-x r     	Prefix Command
+C-x u     	undo-tree-visualize
+C-x r U   	undo-tree-restore-state-from-register
+C-x r u   	undo-tree-save-state-to-register
+
+Global Bindings Starting With C-x:
+C-x C-@   	pop-global-mark
+C-x C-b   	list-buffers
+C-x C-c   	save-buffers-kill-emacs
+C-x C-d   	list-directory
+C-x C-e   	eval-last-sexp
+C-x C-f   	find-file
+C-x TAB   	??
+C-x C-k   	kmacro-keymap
+C-x C-l   	downcase-region
+C-x RET   	Prefix Command
+C-x C-n   	set-goal-column
+C-x C-o   	delete-blank-lines
+C-x C-p   	mark-page
+C-x C-q   	toggle-read-only
+C-x C-r   	find-file-read-only
+C-x C-s   	save-buffer
+C-x C-t   	transpose-lines
+C-x C-u   	upcase-region
+C-x C-v   	find-alternate-file
+C-x C-w   	write-file
+C-x C-x   	exchange-point-and-mark
+C-x C-y   	yas/expand-oneshot-snippet
+C-x C-z   	iconify-or-deiconify-frame
+C-x ESC   	Prefix Command
+C-x #     	server-edit
+C-x $     	set-selective-display
+C-x '     	expand-abbrev
+C-x (     	kmacro-start-macro
+C-x )     	kmacro-end-macro
+C-x *     	calc-dispatch
+C-x +     	balance-windows
+C-x -     	shrink-window-if-larger-than-buffer
+C-x .     	set-fill-prefix
+C-x 0     	delete-window
+C-x 1     	delete-other-windows
+C-x 2     	split-window-vertically
+C-x 3     	split-window-horizontally
+C-x 4     	ctl-x-4-prefix
+C-x 5     	ctl-x-5-prefix
+C-x 6     	2C-command
+C-x ;     	comment-set-column
+C-x <     	scroll-left
+C-x =     	what-cursor-position
+C-x >     	scroll-right
+C-x [     	backward-page
+C-x ]     	forward-page
+C-x ^     	enlarge-window
+C-x `     	next-error
+C-x a     	Prefix Command
+C-x b     	switch-to-buffer
+C-x d     	dired
+C-x e     	kmacro-end-and-call-macro
+C-x f     	recentf-open-files
+C-x h     	mark-whole-buffer
+C-x i     	insert-file
+C-x k     	kill-buffer
+C-x l     	count-lines-page
+C-x m     	compose-mail
+C-x n     	Prefix Command
+C-x o     	other-window
+C-x p     	??
+C-x q     	kbd-macro-query
+C-x s     	save-some-buffers
+C-x v     	vc-prefix-map
+C-x y     	yas/register-oneshot-snippet
+C-x z     	repeat
+C-x {     	shrink-window-horizontally
+C-x }     	enlarge-window-horizontally
+C-x DEL   	backward-kill-sentence
+C-x C-SPC 	pop-global-mark
+C-x <C-left>	previous-buffer
+C-x <C-right>	next-buffer
+C-x <left>	previous-buffer
+C-x <right>	next-buffer
+C-x C-k C-a	kmacro-add-counter
+C-x C-k C-c	kmacro-set-counter
+C-x C-k C-d	kmacro-delete-ring-head
+C-x C-k C-e	kmacro-edit-macro-repeat
+C-x C-k C-f	kmacro-set-format
+C-x C-k TAB	kmacro-insert-counter
+C-x C-k C-k	kmacro-end-or-call-macro-repeat
+C-x C-k C-l	kmacro-call-ring-2nd-repeat
+C-x C-k RET	kmacro-edit-macro
+C-x C-k C-n	kmacro-cycle-ring-next
+C-x C-k C-p	kmacro-cycle-ring-previous
+C-x C-k C-s	kmacro-start-macro
+C-x C-k C-t	kmacro-swap-ring
+C-x C-k C-v	kmacro-view-macro-repeat
+C-x C-k SPC	kmacro-step-edit-macro
+C-x C-k b 	kmacro-bind-to-key
+C-x C-k e 	edit-kbd-macro
+C-x C-k l 	kmacro-edit-lossage
+C-x C-k n 	kmacro-name-last-macro
+C-x C-k q 	kbd-macro-query
+C-x C-k r 	apply-macro-to-region-lines
+C-x C-k s 	kmacro-start-macro
+C-x RET C-\	set-input-method
+C-x RET F 	set-file-name-coding-system
+C-x RET X 	set-next-selection-coding-system
+C-x RET c 	universal-coding-system-argument
+
+Key translations Starting With C-x:
+C-x 8     	iso-transl-ctl-x-8-map
+
+Function key map translations Starting With C-x:
+C-x @     	Prefix Command
+C-x @ S   	event-apply-shift-modifier
+C-x @ a   	event-apply-alt-modifier
+C-x @ c   	event-apply-control-modifier
+C-x @ h   	event-apply-hyper-modifier
+C-x @ m   	event-apply-meta-modifier
+C-x @ s   	event-apply-super-modifier

@@ -1,0 +1,6 @@
+`yas/minor-mode' Minor Mode Bindings Starting With C-c:
+C-c &     	Prefix Command
+C-c & C-f 	yas/find-snippets
+C-c & C-n 	yas/new-snippet
+C-c & C-s 	yas/insert-snippet
+C-c & C-v 	yas/visit-snippet-file

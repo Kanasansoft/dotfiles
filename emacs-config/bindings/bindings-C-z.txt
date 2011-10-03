@@ -1,0 +1,39 @@
+Global Bindings Starting With C-z:
+C-z C-a   	elscreen-toggle
+C-z C-c   	elscreen-create
+C-z C-f   	elscreen-find-file
+C-z C-k   	elscreen-kill
+C-z RET   	elscreen-display-last-message
+C-z C-n   	elscreen-next
+C-z C-p   	elscreen-previous
+C-z C-r   	elscreen-find-file-read-only
+C-z C-s   	elscreen-swap
+C-z C-t   	elscreen-display-time
+C-z C-w   	elscreen-display-screen-name-list
+C-z ESC   	Prefix Command
+C-z "     	elscreen-select-and-goto
+C-z '     	elscreen-goto
+C-z 0     	elscreen-jump-0
+C-z 1 .. C-z 8	elscreen-jump
+C-z 9     	elscreen-jump-9
+C-z ?     	elscreen-help
+C-z A     	elscreen-screen-nickname
+C-z C     	elscreen-clone
+C-z K     	elscreen-kill-others
+C-z T     	elscreen-toggle-display-tab
+C-z a     	elscreen-toggle
+C-z b     	elscreen-find-and-goto-by-buffer
+C-z c     	elscreen-create
+C-z d     	elscreen-dired
+C-z i     	elscreen-toggle-display-screen-number
+C-z j     	elscreen-link
+C-z k     	elscreen-kill
+C-z m     	elscreen-display-last-message
+C-z n     	elscreen-next
+C-z p     	elscreen-previous
+C-z s     	elscreen-split
+C-z t     	elscreen-display-time
+C-z v     	elscreen-display-version
+C-z w     	elscreen-display-screen-name-list
+C-z M-k   	elscreen-kill-screen-and-buffers
+C-z M-x   	elscreen-execute-extended-command

@@ -1,0 +1,26 @@
+Global Bindings Starting With C-::
+C-: C-f   	follow-mode
+C-: C-j   	jaspace-mode
+C-: C-l   	toggle-truncate-lines
+C-: h     	fold-dwim-toggle
+C-: i     	Prefix Command
+C-: j     	open-junk-file
+C-: m     	Prefix Command
+C-: t     	text-translator-all-by-auto-selection
+C-: C-:   	anything-find-files
+C-: m c   	multiverse-diff-current
+C-: m d   	multiverse-forget
+C-: m f   	multiverse-forget
+C-: m o   	multiverse-diff-other
+C-: m r   	multiverse-restore
+C-: m s   	multiverse-store
+C-: i c   	ipa-cleanup
+C-: i e   	ipa-edit
+C-: i g   	ipa-go-to-annotation
+C-: i i   	ipa-insert
+C-: i j   	ipa-jump
+C-: i m   	ipa-move
+C-: i n   	ipa-next
+C-: i p   	ipa-previous
+C-: i s   	ipa-show
+C-: i t   	ipa-toggle

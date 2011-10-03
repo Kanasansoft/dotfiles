@@ -1,0 +1,251 @@
+Major Mode Bindings:
+TAB       	forward-button
+ESC       	Prefix Command
+<backtab> 	backward-button
+<remap>   	Prefix Command
+M-TAB     	backward-button
+
+`cua-mode' Minor Mode Bindings:
+C-S-SPC   	cua-toggle-global-mark
+<C-return>	cua-set-rectangle-mark
+<remap>   	Prefix Command
+<remap> <clipboard-yank>	cua-paste
+<remap> <scroll-down>	cua-scroll-down
+<remap> <scroll-up>	cua-scroll-up
+<remap> <set-mark-command>	cua-set-mark
+<remap> <x-clipboard-yank>	cua-paste
+<remap> <yank>	cua-paste
+<remap> <yank-pop>	cua-paste-pop
+
+`view-mode' Minor Mode Bindings:
+C-j       	View-scroll-line-forward
+RET       	View-scroll-line-forward
+SPC       	View-scroll-page-forward
+%         	View-goto-percent
+'         	register-to-point
+-         	negative-argument
+.         	set-mark-command
+/         	View-search-regexp-forward
+0 .. 9    	digit-argument
+<         	beginning-of-buffer
+=         	what-line
+>         	end-of-buffer
+?         	describe-mode
+@         	View-back-to-mark
+C         	View-kill-and-leave
+E         	View-exit-and-edit
+F         	View-revert-buffer-scroll-page-forward
+H         	describe-mode
+Q         	View-quit-all
+\         	View-search-regexp-backward
+c         	View-leave
+d         	View-scroll-half-page-forward
+e         	View-exit
+g         	View-goto-line
+h         	describe-mode
+m         	point-to-register
+n         	View-search-last-regexp-forward
+o         	View-scroll-to-buffer-end
+p         	View-search-last-regexp-backward
+q         	View-quit
+r         	isearch-backward
+s         	isearch-forward
+u         	View-scroll-half-page-backward
+w         	View-scroll-page-backward-set-page-size
+x         	exchange-point-and-mark
+y         	View-scroll-line-backward
+z         	View-scroll-page-forward-set-page-size
+DEL       	View-scroll-page-backward
+
+Global Bindings:
+C-@       	set-mark-command
+C-a       	move-beginning-of-line
+C-b       	backward-char
+C-c       	mode-specific-command-prefix
+C-d       	delete-char
+C-e       	move-end-of-line
+C-f       	forward-char
+C-g       	keyboard-quit
+C-h       	backward-delete-char
+C-k       	kill-line
+C-l       	recenter
+C-n       	next-line
+C-o       	open-line
+C-p       	previous-line
+C-q       	quoted-insert
+C-r       	isearch-backward
+C-s       	isearch-forward
+C-t       	transpose-chars
+C-u       	universal-argument
+C-v       	scroll-up
+C-w       	kill-region
+C-x       	Control-X-prefix
+C-y       	yank
+C-z       	Prefix Command
+C-\       	toggle-input-method
+C-]       	abort-recursive-edit
+C-_       	undo
+C-SPC     	set-mark-command
+C--       	negative-argument
+C-/       	undo
+C-0 .. C-9	digit-argument
+C-:       	Prefix Command
+<C-M-S-down>	enlarge-window
+<C-M-S-left>	shrink-window-horizontally
+<C-M-S-right>	enlarge-window-horizontally
+<C-M-S-up>	shrink-window
+<C-M-down>	down-list
+<C-M-end> 	end-of-defun
+<C-M-home>	beginning-of-defun
+<C-M-left>	backward-sexp
+<C-M-right>	forward-sexp
+<C-M-up>  	backward-up-list
+<C-S-backspace>	kill-whole-line
+<C-backspace>	backward-kill-word
+<C-delete>	kill-word
+<C-down>  	forward-paragraph
+<C-down-mouse-1>	mouse-buffer-menu
+<C-down-mouse-2>	facemenu-menu
+<C-down-mouse-3>	mouse-popup-menubar-stuff
+<C-end>   	end-of-buffer
+<C-home>  	beginning-of-buffer
+<C-insert>	kill-ring-save
+<C-insertchar>	kill-ring-save
+<C-left>  	backward-word
+<C-next>  	scroll-left
+<C-prior> 	scroll-right
+<C-right> 	forward-word
+<C-up>    	backward-paragraph
+<C-wheel-down>	mwheel-scroll
+<C-wheel-up>	mwheel-scroll
+<M-begin> 	beginning-of-buffer-other-window
+<M-down-mouse-1>	mouse-drag-secondary
+<M-drag-mouse-1>	mouse-set-secondary
+<M-end>   	end-of-buffer-other-window
+<M-home>  	beginning-of-buffer-other-window
+<M-left>  	backward-word
+<M-mouse-1>	mouse-start-secondary
+<M-mouse-2>	mouse-yank-secondary
+<M-mouse-3>	mouse-secondary-save-then-kill
+<M-next>  	scroll-other-window
+<M-prior> 	scroll-other-window-down
+<M-right> 	forward-word
+<S-delete>	kill-region
+<S-down>  	windmove-down
+<S-down-mouse-1>	mouse-set-font
+<S-insert>	yank
+<S-insertchar>	yank
+<S-left>  	windmove-left
+<S-mouse-3>	kmacro-end-call-mouse
+<S-right> 	windmove-right
+<S-up>    	windmove-up
+<S-wheel-down>	mwheel-scroll
+<S-wheel-up>	mwheel-scroll
+<again>   	repeat-complex-command
+<begin>   	beginning-of-buffer
+<compose-last-chars>	compose-last-chars
+<copy>    	clipboard-kill-ring-save
+<cut>     	clipboard-kill-region
+<delete-frame>	handle-delete-frame
+<deletechar>	delete-char
+<deleteline>	kill-line
+<double-mouse-1>	mouse-set-point
+<down>    	next-line
+<down-mouse-1>	mouse-drag-region
+<drag-mouse-1>	mouse-set-region
+<end>     	move-end-of-line
+<execute> 	anything-execute-extended-command
+<f1>      	help-command
+<f10>     	tmm-menubar
+<f16>     	clipboard-kill-ring-save
+
+Key translations:
+C-x       	Prefix Command
+ .. ÿ 	encoded-kbd-self-insert-ccl
+C-x 8     	iso-transl-ctl-x-8-map
+
+Function key map translations:
+C-x       	Prefix Command
+ESC       	Prefix Command
+¥         	\
+¥         	\
+C-¥       	C-\
+<C-S-kp-1>	<C-S-end>
+<C-S-kp-2>	<C-S-down>
+<C-S-kp-3>	<C-S-next>
+<C-S-kp-4>	<C-S-left>
+<C-S-kp-6>	<C-S-right>
+<C-S-kp-7>	<C-S-home>
+<C-S-kp-8>	<C-S-up>
+<C-S-kp-9>	<C-S-prior>
+<C-S-kp-down>	<C-S-down>
+<C-S-kp-end>	<C-S-end>
+<C-S-kp-home>	<C-S-home>
+<C-S-kp-left>	<C-S-left>
+<C-S-kp-next>	<C-S-next>
+<C-S-kp-prior>	<C-S-prior>
+<C-S-kp-right>	<C-S-right>
+<C-S-kp-up>	<C-S-up>
+<M-backspace>	M-DEL
+<M-clear> 	C-M-l
+<M-delete>	M-DEL
+<M-escape>	M-ESC
+<M-kp-next>	<M-next>
+<M-linefeed>	C-M-j
+<M-return>	M-RET
+<M-tab>   	M-TAB
+<S-kp-down>	<S-down>
+<S-kp-end>	<S-end>
+<S-kp-home>	<S-home>
+<S-kp-left>	<S-left>
+<S-kp-next>	<S-next>
+<S-kp-prior>	<S-prior>
+<S-kp-right>	<S-right>
+<S-kp-up> 	<S-up>
+<backspace>	DEL
+<clear>   	C-l
+<delete>  	C-d
+<escape>  	ESC
+<kp-0>    	0
+<kp-1>    	1
+<kp-2>    	2
+<kp-3>    	3
+<kp-4>    	4
+<kp-5>    	5
+<kp-6>    	6
+<kp-7>    	7
+<kp-8>    	8
+<kp-9>    	9
+<kp-add>  	+
+<kp-begin>	<begin>
+<kp-decimal>	.
+<kp-delete>	C-d
+<kp-divide>	/
+<kp-down> 	<down>
+<kp-end>  	<end>
+<kp-enter>	RET
+<kp-equal>	=
+<kp-home> 	<home>
+<kp-insert>	<insert>
+<kp-left> 	<left>
+<kp-multiply>	*
+<kp-next> 	<next>
+<kp-prior>	<prior>
+<kp-right>	<right>
+<kp-separator>	,
+<kp-space>	SPC
+<kp-subtract>	-
+<kp-tab>  	TAB
+<kp-up>   	<up>
+<linefeed>	C-j
+<return>  	RET
+<tab>     	TAB
+Invalid char code 134219813 M-\
+Invalid char code 201328677 C-M-\
+C-x @	Prefix Command
+C-x @ S   	event-apply-shift-modifier
+C-x @ a   	event-apply-alt-modifier
+C-x @ c   	event-apply-control-modifier
+C-x @ h   	event-apply-hyper-modifier
+C-x @ m   	event-apply-meta-modifier
+C-x @ s   	event-apply-super-modifier

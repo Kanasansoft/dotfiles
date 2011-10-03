@@ -1,0 +1,3 @@
+キーバインドの調べ方
+<f1> b
+<Prefix Command> C-h
