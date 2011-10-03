@@ -1,4 +1,4 @@
-;; (progn (dired-create-directory "~/dotfiles/emacs-config/download") (dired-create-directory "~/dotfiles/emacs-config/repository") (shell-command "touch ~/dotfiles/emacs-config/myconfig/config-environment.el"))
+;; (progn (dired-create-directory "~/dotfiles/emacs-config/download") (dired-create-directory "~/dotfiles/emacs-config/repository") (dired-create-directory "~/dotfiles/emacs-config/htmlize") (shell-command "touch ~/dotfiles/emacs-config/myconfig/config-environment.el"))
 
 ;;; start.el
 
