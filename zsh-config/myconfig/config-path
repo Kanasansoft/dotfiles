@@ -11,6 +11,7 @@ path=(
 	/opt/local/sbin/(N)                                 #Macports
 	~/.rvm/scripts/rvm(N)                               #RVM
 	~/Developer/flex_sdk_3/bin(N)                       #Flex SDK
+	~/Developer/flex_sdk_4.6/bin(N)                     #Flex SDK
 	~/Developer/android-sdk-mac_x86(N)                  #Android SDK for Mac
 	~/Developer/android-sdk-mac_x86/platform-tools(N)   #Android SDK for Mac
 )
