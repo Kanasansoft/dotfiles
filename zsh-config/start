@@ -14,6 +14,7 @@ function my-emacs-load-config (){
 		'fpath'
 		'path'
 		'key'
+		'nvm'
 	)
 
 	my_zsh_misc_config=(

@@ -1,0 +1,3 @@
+nvm_path="$HOME/.nvm/nvm.sh"
+
+[ -f $nvm_path ] && source "$nvm_path"
