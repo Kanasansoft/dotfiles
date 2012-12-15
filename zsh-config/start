@@ -25,6 +25,7 @@ function my-emacs-load-config (){
 	my_zsh_post_config=(
 		'misc'
 		'precmd'
+		'zsh-syntax-highlighting'
 	)
 
 	my_zsh_config=(
